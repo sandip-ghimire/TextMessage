@@ -1,0 +1,21 @@
+<div class="table-responsive">
+    <div class="tablediv">
+        <table class='table-borderless'>
+            {% for msg in messages %}
+            <tr>
+                <td>
+                    <div class="unseen"></div>
+                    <input type="text" class="form-control listtext font-weight-bold" id="msg{{msg.pk}}"
+                           readonly="readonly" value="{{msg.text}}">
+                </td>
+                <td>
+                    <button type="button" class="btn flex-shrink-1 shadow-none dltbtn" pk={{msg.pk}} title="Delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>

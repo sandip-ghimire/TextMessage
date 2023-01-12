@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.dltbtn {
+	background-color: #9c9b9a00;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	color: #da1717;
+	position: relative;
+    top: 3px;
+    left: -5px;
+}
+
+.unseen{
+  border-radius: 5px;
+  background: #ff7100;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 10px;
+  left: 2px;
+}
+
+#notificationbox {
+  top: 20px;
+  position: relative;
+}
+
+.success {
+  color:green;
+}
+
+.error {
+  color: red;
+}
+
+.tablediv {
+  height: 625px;
+}
+
+.listtext {
+ width: 100%;
+ background-color: #fff!important;
+ cursor: pointer;
+}

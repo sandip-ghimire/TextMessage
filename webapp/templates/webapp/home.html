@@ -1,0 +1,43 @@
+{% extends "webapp/base.html" %}
+{% block content %}
+<div class="contentWrapper container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-7 ">
+                <div class="form-group inputrow row">
+                    <div class="col-11 form-group textarea1">
+
+                        <label for="inputtxtarea"> <b>Message</b> </label>
+                        <textarea type="textarea" class="form-control form-rounded z-depth-1 inputtxt" id="inputtxtarea"
+                                  rows="3" placeholder="Write something here..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <button type="button" class="input-group-append btn btn-success" id="submitTxt">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i> &nbsp; Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5" id="tableview">
+                {% include "webapp/list_display.html" %}
+            </div>
+
+        </div> <!--row-->
+
+        <div class="form-group displaymsg row">
+            <label id="notificationbox"></label>
+        </div>
+
+        {% include "webapp/textview_modal.html" %}
+
+    </div> <!--container-->
+</div>
+<script>
+    var URL = "{{ url| safe }}";
+</script>
+{% endblock %}
+
