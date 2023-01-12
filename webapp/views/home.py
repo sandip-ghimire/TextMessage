@@ -58,7 +58,7 @@ def msg_api(request, pk=None) -> JsonResponse:
             f.write(data)
 
         # call webhook url and send response
-        req = requests.post(WEBHOOK_URL, data=data)
+        req = requests.post(settings.WEBHOOK_URL, data=data)
         resp_status = HTTPStatus.CREATED if req.status_code == 200 else req.status_code
         return JsonResponse(serializer.data, status=resp_status)
 

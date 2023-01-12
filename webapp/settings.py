@@ -115,3 +115,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FILE_EXT = '.txt'
+WEBHOOK_URL = os.environ.get('WEBHOOK_URL')

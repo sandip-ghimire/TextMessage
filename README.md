@@ -17,8 +17,8 @@ It implements concepts such as:
 - Open the command line from the root directory of the project, i.e. the path where Dockerfile is located.  Build the docker image with the command:
   >docker build -t webapp .
 
-- Run the docker container with the command below: <br />
-  >docker run --name=webapp-container -p 8008:8008 webapp
+- Add the webhook url in .env file and run the docker container with the command below: <br />
+  >docker run --name=webapp-container --env-file .env -p 8008:8008 webapp
 
   *(The application runs on port 8008)* <br />
   The interface can be accessed at: <br />

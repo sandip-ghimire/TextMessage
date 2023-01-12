@@ -22,8 +22,9 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 RUN apt install dos2unix
 RUN dos2unix manage.py
+RUN chmod +x manage.py start-service.sh
 RUN ./manage.py makemigrations webapp
-RUN ./manage.py migrate webapp
+RUN ./manage.py migrate
 RUN ./manage.py collectstatic --noinput
 
 CMD ["/app/start-service.sh"]
