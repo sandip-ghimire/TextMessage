@@ -33,7 +33,7 @@ It implements concepts such as:
 - Open the command line from the root directory of the project (TextMessage) and create virtual env:
   >python -m venv venv
 - Activate virtual env:
-  >venv/Scripts/activate
+  >venv\Scripts\activate
 - Install dependencies:
   >pip install -r requirements.txt
 - Make migrations:
