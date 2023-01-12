@@ -5,7 +5,7 @@ from http import HTTPStatus
 from rest_framework.decorators import api_view
 from webapp.models import Message
 from .serializers import MessageSerializer
-from .constants import WEBHOOK_URL, NOT_FOUND
+from .constants import NOT_FOUND
 import requests
 import json
 import os

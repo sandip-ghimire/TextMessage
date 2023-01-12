@@ -18,7 +18,7 @@ It implements concepts such as:
   >docker build -t webapp .
 
 - Add the webhook url in .env file and run the docker container with the command below: <br />
-  >docker run --name=webapp-container --env-file .env -p 8008:8008 webapp
+  >docker run --name=webapp-container --env-file .env -d -p 8008:8008 webapp
 
   *(The application runs on port 8008)* <br />
   The interface can be accessed at: <br />
